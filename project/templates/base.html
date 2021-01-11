@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- BOOTSTRAP THEME -->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+     <!-- CUSTOM STYLES -->
+     <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -27,41 +29,43 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-                        <a href="{{ url_for('main.index') }}" class="navbar-item">
+                        {% if not current_user.is_authenticated %}
+                        <a href="{{ url_for('main.index') }}">
                             Home
                         </a>
+                        {% endif %}
                     </li>
                     <li class="nav-item">
                         {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.profile') }}" class="navbar-item">
+                        <a href="{{ url_for('main.profile') }}">
                             Profile
                         </a>
                         {% endif %}
                     </li>
 					<li class="nav-item">
                         {% if not current_user.is_authenticated %}
-                        <a href="{{ url_for('main.about') }}" class="navbar-item">
+                        <a href="{{ url_for('main.about') }}">
                             About
                         </a>
                         {% endif %}
                     </li>
                     <li class="nav-item">
                         {% if not current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.login') }}" class="navbar-item">
+                        <a href="{{ url_for('auth.login') }}">
                             Login
                         </a>
                         {% endif %}
                     </li>
                     <li class="nav-item">
                         {% if not current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.signup') }}" class="navbar-item">
+                        <a href="{{ url_for('auth.signup') }}">
                             Sign Up
                         </a>
                         {% endif %}
                     </li>
                     <li class="nav-item">
                         {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.logout') }}" class="navbar-item">
+                        <a href="{{ url_for('auth.logout') }}">
                             Logout
                         </a>
                         {% endif %}
@@ -72,13 +76,27 @@
     </nav>
     <!-- End Navbar -->
 
-        <div class="hero-body">
-            <div class="container has-text-centered">
-               {% block content %}
-               {% endblock %}
-            </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% block content %}
+            {% endblock %}
         </div>
-    </section>
+    </div>
+
+    <!--FOOTER-->  
+    <footer>
+        <h3>NOVELTEA by <span>Sree Chikati</span></h3>
+        <p> Contact:</p>
+        <div id = "find">
+            <a href="https://github.com/sree-chikati" class="github" title="Github">
+                <i class="fa fa-github fa-3x"></i>
+            </a>
+            <a href="https://www.instagram.com/sreechikati/" class="instagram" title="Instagram">
+                <i class="fa fa-instagram fa-3x"></i>
+            </a>
+        </div>
+      </footer>
+    <!-- End Footer -->
 
 <!-- SCRIPT FOR FONT AWESOME -->
 <script src="https://kit.fontawesome.com/2cf12949d8.js" crossorigin="anonymous"></script>
