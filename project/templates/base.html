@@ -15,7 +15,8 @@
 </head>
 
 <body>
-     <!--  NAV BAR -->
+    <!--  HOME NAV BAR -->
+    {% if not current_user.is_authenticated %}
     <nav class="navbar bg-light navbar-light navbar-expand-lg">
 		<div class="container">
 			<a href="/" class="navbar-brand">
@@ -29,59 +30,67 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-                        {% if not current_user.is_authenticated %}
                         <a href="{{ url_for('main.index') }}">
                             Home
                         </a>
-                        {% endif %}
-                    </li>
-                    <li class="nav-item">
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.profile') }}">
-                            Profile
-                        </a>
-                        {% endif %}
                     </li>
 					<li class="nav-item">
-                        {% if not current_user.is_authenticated %}
                         <a href="{{ url_for('main.about') }}">
                             About
                         </a>
-                        {% endif %}
                     </li>
                     <li class="nav-item">
-                        {% if not current_user.is_authenticated %}
                         <a href="{{ url_for('auth.login') }}">
                             Login
                         </a>
-                        {% endif %}
                     </li>
                     <li class="nav-item">
-                        {% if not current_user.is_authenticated %}
                         <a href="{{ url_for('auth.signup') }}">
                             Sign Up
                         </a>
-                        {% endif %}
-                    </li>
-                    <li class="nav-item">
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('main.search') }}">
-                            Search Books
-                        </a>
-                        {% endif %}
-                    </li>
-                    <li class="nav-item">
-                        {% if current_user.is_authenticated %}
-                        <a href="{{ url_for('auth.logout') }}">
-                            Logout
-                        </a>
-                        {% endif %}
                     </li>
 				</ul>
 			</div>
 		</div>
     </nav>
+    {% endif %}
     <!-- End Navbar -->
+
+    <!--  PROFFILE NAV BAR -->
+    {% if current_user.is_authenticated %}
+    <nav class="navbar bg-light navbar-light navbar-expand-lg">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+               <img src="{{url_for('static', filename='Logo.png')}}" alt="" width="75", height="75">
+            </a>
+		  
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+                        <a href="{{ url_for('main.search') }}">
+                            Search Books
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('main.profile') }}">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ url_for('auth.logout') }}">
+                            Logout
+                        </a>
+                    </li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+    {% endif %}
+    <!-- End Profile Navbar -->
 
     <div class="hero-body">
         <div class="container has-text-centered">
