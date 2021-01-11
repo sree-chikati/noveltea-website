@@ -16,3 +16,8 @@ def about():
 @login_required
 def profile():
     return render_template('profile.html', name=current_user.name)
+
+@main.route('/search')
+@login_required
+def search():
+    return render_template('search.html', name=current_user.name)
