@@ -21,3 +21,8 @@ def profile():
 @login_required
 def search():
     return render_template('search.html', name=current_user.name)
+
+@main.route('/book')
+@login_required
+def book():
+    return render_template('book.html', name=current_user.name)
