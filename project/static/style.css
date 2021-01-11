@@ -60,10 +60,10 @@ body {
 
   /*===== MAIN IMG =====*/
   .fixed {
-    background-image: url(./images/bg1.png);
-    position: fixed;
+    background-image: url(./images/main/bg1.png);
+    background-attachment: fixed;
   }
-  
+
   .fixed-background {
     padding: 10rem 0;
   }
