@@ -7,7 +7,14 @@ from .models import User
 from . import db
 
 auth = Blueprint('auth', __name__)
+@auth.route('/login')
+def login():
+    return render_template('login.html')
 
+@auth.route('/signup')
+def signup():
+    return render_template('signup.html')
+    
 @auth.route('/login', methods=['POST'])
 def login_post():
     email = request.form.get('email')
