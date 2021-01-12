@@ -1,2 +1,2 @@
-from project import getApp
+from project import create_app
 app = create_app()
