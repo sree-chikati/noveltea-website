@@ -1,7 +1,342 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  Welcome, {{ name }}!
-</h1>
+<main>
+  <div class="mt-4">
+      <div class="container d-flex justify-content-center">
+        <div class="col-9">
+            <div class="row">
+                <div class="col-8">
+                    <!-- START OF STORIES -->
+                    <div class="card">
+                        <div class="card-main
+                          d-flex justify-content-start">
+                            <ul class="list-unstyled mb-0">
+                                <li class="list-inline-item">
+                                    <button class="btn p-2">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='percy.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Demigods</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='twilight.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Twihards</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='maze.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Dashner's Army</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='harry.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Potterheads</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='hunger.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Tributes</small>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn p-0 m-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div
+                                                class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger story-profile-photo">
+                                                <img src="{{url_for('static', filename='diver.png')}}" alt="..." width="45", height="45">
+                                            </div>
+                                            <small>Initiates</small>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <!-- END OF STORIES -->
+
+                      <!-- START OF POST 1 -->
+                      <div class="d-flex flex-column mt-4 mb-4">
+
+                        <div class="card">
+                            <div class="card-header p-3">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div
+                                        class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger post-profile-photo mr-3">
+                                        <img src="{{url_for('static', filename='Logo.png')}}" alt="..." width="30", height="30">
+                                    </div>
+                                    <span class="font-weight-bold">noveltea</span>
+                                </div>
+                            </div>
+                            <div class="card-main
+                              p-0">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img class="embed-responsive-item" src="{{url_for('static', filename='night.jpg')}}" />
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                                    <ul class="list-inline d-flex flex-row align-items-center m-0">
+                                        <li class="list-inline-item">
+                                            <button class="btn p-0">
+                                              <i class="far fa-heart fa-2x"></i>
+                                            </button>
+                                        </li>
+                                        <li class="list-inline-item ml-2">
+                                            <button class="btn p-0">
+                                              <i class="far fa-comment fa-2x"></i>
+                                            </button>
+                                        </li>
+                                        <li class="list-inline-item ml-2">
+                                            <button class="btn p-0">
+                                              <i class="far fa-share-square fa-2x"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pl-3 pr-3 pb-2">
+                                    <strong class="d-block">56 likes</strong>
+                                    <strong class="d-block">nirdla_</strong>
+                                    <p class="d-block mb-1">Visited Japan before the world shut down :) </p>
+                                    <button class="btn p-0">
+                                        <span class="text-muted">View all 8 comments</span>
+                                    </button>
+
+                                    <div>
+                                        <div>
+                                            <strong>taekwonChan</strong>
+                                            <span>cool</span>
+                                        </div>
+                                        <div>
+                                            <strong>barackobama</strong>
+                                            <span>Yes you can</span>
+                                        </div>
+                                        <div>
+                                            <strong>realdonaldtrump</strong>
+                                            <span>You make America great again</span>
+                                        </div>
+                                    </div>
+
+                                    <small class="text-muted">4 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END OF POST 1-->
+
+                    <!-- START OF POST 2 -->
+                    <div class="d-flex flex-column mt-4 mb-4">
+
+                        <div class="card">
+                            <div class="card-header p-3">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div
+                                        class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger post-profile-photo mr-3">
+                                        <img src="{{url_for('static', filename='Logo.png')}}" alt="..." width="30", height="30">
+                                    </div>
+                                    <span class="font-weight-bold">nirdla_</span>
+                                </div>
+                            </div>
+                            <div class="card-main
+                              p-0">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img class="embed-responsive-item" src="{{url_for('static', filename='infernal.jpg')}}" />
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                                    <ul class="list-inline d-flex flex-row align-items-center m-0">
+                                      <li class="list-inline-item">
+                                        <button class="btn p-0">
+                                          <i class="far fa-heart fa-2x"></i>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item ml-2">
+                                        <button class="btn p-0">
+                                          <i class="far fa-comment fa-2x"></i>
+                                        </button>
+                                    </li>
+                                    <li class="list-inline-item ml-2">
+                                        <button class="btn p-0">
+                                          <i class="far fa-share-square fa-2x"></i>
+                                        </button>
+                                    </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pl-3 pr-3 pb-2">
+                                    <strong class="d-block">77 likes</strong>
+                                    <strong class="d-block">nirdla_</strong>
+                                    <p class="d-block mb-1">Tried finding Nemo, but ended up finding Crush</p>
+                                    <button class="btn p-0">
+                                        <span class="text-muted">View all 10 comments</span>
+                                    </button>
+
+                                    <div>
+                                        <div>
+                                            <strong>Google</strong>
+                                            <span>You're hired</span>
+                                        </div>
+                                        <div>
+                                            <strong>Microsoft</strong>
+                                            <span>sent you a dm. Please respond.</span>
+                                        </div>
+                                        <div>
+                                            <strong>realdonaldtrump</strong>
+                                            <span>You make America great again</span>
+                                        </div>
+                                        <div>
+                                            <strong>joebiden</strong>
+                                            <span>Will you shut up man?!</span>
+                                        </div>
+                                    </div>
+
+                                    <small class="text-muted">4 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END OF POST 2-->
+
+
+                    <!-- START OF POST 3 -->
+                    <div class="d-flex flex-column mt-4 mb-4">
+
+                        <div class="card">
+                            <div class="card-header p-3">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div
+                                        class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-danger post-profile-photo mr-3">
+                                        <img src="{{url_for('static', filename='Logo.png')}}" alt="..." width="30", height="30">
+                                    </div>
+                                    <span class="font-weight-bold">facebook</span>
+                                </div>
+                            </div>
+                            <div class="card-main
+                              p-0">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img class="embed-responsive-item" src="{{url_for('static', filename='tog.jpg')}}" />
+                                </div>
+
+                                <div class="d-flex flex-row justify-content-between pl-3 pr-3 pt-3 pb-1">
+                                    <ul class="list-inline d-flex flex-row align-items-center m-0">
+                                      <li class="list-inline-item">
+                                          <button class="btn p-0">
+                                            <i class="far fa-heart fa-2x"></i>
+                                          </button>
+                                      </li>
+                                      <li class="list-inline-item ml-2">
+                                          <button class="btn p-0">
+                                            <i class="far fa-comment fa-2x"></i>
+                                          </button>
+                                      </li>
+                                      <li class="list-inline-item ml-2">
+                                          <button class="btn p-0">
+                                            <i class="far fa-share-square fa-2x"></i>
+                                          </button>
+                                      </li>
+                                    </ul>
+                                </div>
+
+                                <div class="pl-3 pr-3 pb-2">
+                                    <strong class="d-block">200k likes</strong>
+                                    <strong class="d-block">facebook</strong>
+                                    <p class="d-block mb-1">
+                                        As the 2020 presidential election in the United States draws closer, Analog Labs worked with
+                                        Portuguese illustrator Cristiana Couceiro to create this photo collage with photos,
+                                        vectors and different pieces to tell a story for the civic expression.
+                                        The entire landscape of this work is based on the hand in action—from that gesture, things happen,
+                                        change is possible and the future is ahead.
+                                        <br>
+                                        <br>
+                                        For more information on how to make your voice heard, visit: facebook.com/votinginfocenter </p>
+                                    <button class="btn p-0">
+                                        <span class="text-muted">View all 1,435 comments</span>
+                                    </button>
+
+                                    <div>
+                                        <div>
+                                            <strong>myspacetom</strong>
+                                            <span>cool</span>
+                                        </div>
+                                        <div>
+                                            <strong>barackobama</strong>
+                                            <span>Yes you can</span>
+                                        </div>
+                                        <div>
+                                            <strong>realdonaldtrump</strong>
+                                            <span>You make America great again</span>
+                                        </div>
+                                    </div>
+
+                                    <small class="text-muted">4 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- END OF POST 3-->
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex flex-row align-items-center">
+                        <div
+                            class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border sidenav-profile-photo">
+                            <img src="{{url_for('static', filename='Logo.png')}}" alt="..." width="30", height="30">
+                        </div>
+                        <div class="profile-info ml-3">
+                            <span class="profile-info-name">{{ name }}</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex flex-row justify-content-between">
+                            <small class="text-muted font-weight-bold">Welcome Message</small>
+                        </div>
+                        <div>
+                            <div class="d-flex flex-row justify-content-between align-items-center mt-3 mb-3">
+                                <h4>Welcome to Noveltea!</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</main>
+
 {% endblock %}
