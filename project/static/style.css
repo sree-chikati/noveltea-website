@@ -92,7 +92,7 @@ body {
 
 /*============= SEARCH =============*/
 .search-content{
-  background-image: url(./images/main/bg1.png);
+  background: tan!important;
   height: 100%;
   padding: 7rem;
 }
