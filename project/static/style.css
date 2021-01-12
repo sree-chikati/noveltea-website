@@ -85,10 +85,17 @@ body {
     font-weight: bold;
   }
 
-/*===== SIGNUP =====*/
-.sign-content{
-  background:rgb(34, 27, 19);
+/*===== ENJOY =====*/
+.enjoy{
+  padding: 0 0 2rem 0!important;
 }
+
+
+/*===== ADIVCE =====*/
+.advice{
+  padding: 4rem;
+}
+
 
 /*============= SEARCH =============*/
 .search-content{
@@ -166,6 +173,11 @@ body {
 
 .sugest-username {
   font-size: 14px
+}
+
+/*============= JUMBOTRON =============*/
+.jumbrotron{
+  background-color: rgb(235, 225, 206)!important;
 }
 
 /*============= FOOTER =============*/
