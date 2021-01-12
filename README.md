@@ -1,5 +1,7 @@
 # Noveltea-📖🍵
-Intensive 1.1 (2020)
+Intensive 1.1 (2020)<br>
+[Heroku Live Link (currently works without login/signup and authetication)](https://noveltea.herokuapp.com/)
+
 
  ## Table of Contents
  * [About this Project](#about-this-project)
