@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/sree/Desktop/dev/Term 2 courses/int 1.2/flask_auth_app/auth/bin/python3" "$0" "$@"
+'''exec' "/Users/sree/Desktop/dev/Term 2 courses/int 1.2/noveltea-website/noveltea-website/auth/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

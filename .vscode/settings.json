@@ -1,5 +1,5 @@
 {
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.pythonPath": "auth/bin/python"
+    "python.pythonPath": "/Users/sree/Desktop/dev/Term 2 courses/int 1.2/noveltea-website/noveltea-website/auth/bin/python3"
 }
