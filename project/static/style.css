@@ -60,7 +60,7 @@ body {
 
   /*===== MAIN IMG =====*/
   .fixed {
-    background-image: url(./images/main/bg3.png);
+    background-image: url(./images/main/bg1.png);
     background-attachment: fixed;
   }
 
@@ -92,7 +92,7 @@ body {
 
 /*============= SEARCH =============*/
 .search-content{
-  background-image: url(./images/main/bg3.png);
+  background-image: url(./images/main/bg1.png);
   height: 100%;
   padding: 7rem;
 }
