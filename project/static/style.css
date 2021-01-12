@@ -85,10 +85,14 @@ body {
     font-weight: bold;
   }
 
+/*===== SIGNUP =====*/
+.sign-content{
+  background:rgb(34, 27, 19);
+}
 
 /*============= SEARCH =============*/
 .search-content{
-  background: tan!important;
+  background: url(./bg3.png)!important;
   height: 100%;
   padding: 7rem;
 }
